@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRAGRACE | Clarity in Motion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        trustBlue: '#070b56',
+                        actionYellow: '#ffd800',
+                        surface: '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
+        body { 
+            font-family: 'Inter', sans-serif; 
+            color: #070b56; 
+            background-color: #ffffff;
+            opacity: 0;
+            transition: opacity 0.4s ease-in;
+        }
+        body.loaded { opacity: 1; }
+        .logic-border { border-left: 2px solid #ffd800; padding-left: 1.5rem; }
+        .gradient-text { background: linear-gradient(to right, #070b56, #3b429f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .input-box { border: 1px solid rgba(7, 11, 86, 0.1); transition: all 0.3s ease; background-color: #ffffff; }
+        .input-box:focus { border-color: #ffd800; outline: none; box-shadow: 0 0 0 2px #ffd800; }
+        .gold-bullet li { position: relative; padding-left: 1.8rem; margin-bottom: 0.8rem; }
+        .gold-bullet li::before { content: "—"; color: #ffd800; font-weight: 700; position: absolute; left: 0; }
+        
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-success { animation: fadeInScale 0.5s ease-out forwards; }
+    </style>
+</head>
+<body class="bg-surface antialiased">
+
+    <nav class="sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b border-trustBlue/5">
+        <div class="max-w-4xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="text-2xl font-900 tracking-tighter">
+                ULTRA<span class="text-actionYellow">GRACE</span>
+            </div>
+            <div class="hidden md:block text-[10px] font-bold uppercase tracking-[0.4em] opacity-40">
+                Clarity in Motion ✨
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-16 md:py-28">
+
+        <section class="mb-24">
+            <h1 class="text-5xl md:text-7xl font-900 tracking-tight leading-[1.1] mb-8">
+                Great things begin where <br>
+                <span class="text-actionYellow bg-trustBlue px-2">clarity meets action.</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-medium leading-relaxed max-w-2xl opacity-80">
+                UltraGrace gives Shopify founders real decision clarity — across profit, cash flow, marketing performance, and operational blind spots — in one intelligent system.
+            </p>
+        </section>
+
+        <section class="mb-32">
+            <div class="bg-[#f0f3fc] p-8 md:p-12 rounded-3xl border-l-8 border-actionYellow">
+                <div class="space-y-3 text-lg md:text-xl font-light italic text-trustBlue/90">
+                    <p>You can’t improve what you don’t measure.</p>
+                    <p>You can’t measure what you don’t categorise.</p>
+                    <p>You can’t categorise what you don’t understand.</p>
+                </div>
+                <div class="pt-6 mt-4 border-t-2 border-actionYellow/40">
+                    <p class="text-base font-900 uppercase tracking-widest text-trustBlue">Clarity isn’t optional. <span class="text-actionYellow bg-trustBlue px-3 py-1 ml-3 inline-block">It’s infrastructure.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-16 mb-32">
+            <div class="space-y-8">
+                <h3 class="text-[11px] font-900 uppercase tracking-[0.5em] text-trustBlue/40">The Problem</h3>
+                <div class="space-y-6 text-lg">
+                    <p>Most Shopify dashboards show revenue.<br><span class="font-bold border-b border-actionYellow">Few show truth.</span></p>
+                    <p>Ads look profitable.<br><span class="font-bold border-b border-actionYellow">Margins quietly shrink.</span></p>
+                    <p>Cash feels healthy.<br><span class="font-bold border-b border-actionYellow">Runway is shorter than expected.</span></p>
+                    <p>Metrics exist.<br><span class="font-bold border-b border-actionYellow">Meaning is missing.</span></p>
+                </div>
+                <p class="text-sm font-semibold opacity-60 italic">UltraGrace exists to remove those blind spots.</p>
+            </div>
+
+            <div class="bg-trustBlue p-8 md:p-12 text-white rounded-3xl">
+                <h3 class="text-[11px] font-900 uppercase tracking-[0.5em] text-actionYellow mb-8">What UltraGrace Does</h3>
+                <ul class="gold-bullet space-y-5 text-sm md:text-base font-light">
+                    <li>Shows real contribution margin after ads, fees, shipping, and discounts</li>
+                    <li>Connects marketing performance to actual profit</li>
+                    <li>Surfaces decision risks before they become problems</li>
+                    <li>Turns business data into strategic clarity</li>
+                </ul>
+                <div class="mt-10 pt-6 border-t border-white/10 space-y-1 text-[10px] font-black uppercase tracking-widest opacity-80">
+                    <p>No noise.</p>
+                    <p>No vanity metrics.</p>
+                    <p>No illusion of growth.</p>
+                    <p class="text-actionYellow text-sm">Only clarity.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-24 max-w-2xl mx-auto text-center">
+            <h3 class="text-[11px] font-900 uppercase tracking-[0.5em] text-trustBlue/40 mb-8">Who It’s For</h3>
+            <p class="text-2xl font-800 mb-8 leading-tight">Built for serious Shopify founders who want:</p>
+            <div class="flex flex-wrap justify-center gap-3 mb-8 text-sm font-bold">
+                <span class="bg-trustBlue text-white px-4 py-2 rounded-full">financial clarity</span>
+                <span class="bg-trustBlue text-white px-4 py-2 rounded-full">smarter decisions</span>
+                <span class="bg-trustBlue text-white px-4 py-2 rounded-full">controlled growth</span>
+                <span class="bg-trustBlue text-white px-4 py-2 rounded-full">operational confidence</span>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 text-[10px] font-bold uppercase tracking-widest opacity-50">
+                <span>Not for hobby stores</span>
+                <span class="text-actionYellow font-black">●</span>
+                <span>Not for surface-level dashboards</span>
+                <span class="text-actionYellow font-black">●</span>
+                <span>Not for vanity metrics</span>
+            </div>
+        </section>
+
+        <section class="max-w-2xl mx-auto mb-20">
+            <div class="bg-actionYellow/10 border-2 border-trustBlue/20 p-8 rounded-[40px] mb-8 text-center">
+                <h3 class="text-[11px] font-900 uppercase tracking-[0.5em] text-trustBlue/50 mb-4">Limited private beta</h3>
+                <p class="text-lg font-medium text-trustBlue">We are opening a limited private beta. Access is selective.</p>
+                <div class="my-6 flex flex-wrap justify-center gap-4 text-sm">
+                    <span class="bg-trustBlue text-white px-4 py-1 rounded-full">Shape the product</span>
+                    <span class="bg-trustBlue text-white px-4 py-1 rounded-full">Early decision advantage</span>
+                    <span class="bg-trustBlue text-white px-4 py-1 rounded-full">Priority support</span>
+                    <span class="bg-trustBlue text-white px-4 py-1 rounded-full">Build with clarity from day one</span>
+                </div>
+                <p class="text-base font-black uppercase tracking-wide">This is not mass access. <span class="bg-trustBlue text-actionYellow px-2">It is controlled entry.</span></p>
+            </div>
+
+            <div id="form-container" class="bg-white border-2 border-trustBlue p-8 md:p-16 rounded-[40px] shadow-2xl">
+                <h2 class="text-3xl font-900 mb-6 text-center">Application Form</h2>
+                <form id="waitlist-form" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <input type="text" id="full_name" placeholder="Full Name" class="input-box w-full p-4 rounded-2xl text-sm" required>
+                        <input type="email" id="email" placeholder="Work Email" class="input-box w-full p-4 rounded-2xl text-sm" required>
+                    </div>
+                    <input type="url" id="store_url" placeholder="Store URL (yourstore.myshopify.com)" class="input-box w-full p-4 rounded-2xl text-sm" required>
+                    <select id="revenue_range" class="input-box w-full p-4 rounded-2xl text-sm appearance-none bg-white text-gray-600" required>
+                        <option value="" disabled selected>Monthly Revenue Range</option>
+                        <option value="0-5k">$0 – $5k</option>
+                        <option value="5k-20k">$5k – $20k</option>
+                        <option value="20k-50k">$20k – $50k</option>
+                        <option value="50k-200k">$50k – $200k</option>
+                        <option value="200k+">$200k+</option>
+                    </select>
+
+                    <button type="submit" id="submit-btn" class="w-full bg-trustBlue text-white font-900 py-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-xl shadow-trustBlue/20 uppercase tracking-widest text-xs">
+                        Request Private Access
+                    </button>
+                </form>
+
+                <div class="mt-10 text-center">
+                    <p class="text-2xl font-500 text-trustBlue">Clarity compounds. <strong class="bg-actionYellow text-trustBlue px-3 py-1 inline-block">Apply for access.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center mt-24 space-y-2">
+            <p class="text-sm font-900 uppercase tracking-[0.4em] text-trustBlue/40">"Great things begin where clarity meets action."</p>
+            <p class="text-[10px] font-black text-actionYellow bg-trustBlue inline-block px-6 py-2 rounded-full">POWERED BY GOD’S GRACE.</p>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+        // Reveal site
+        window.addEventListener('load', () => document.body.classList.add('loaded'));
+
+        const SUPABASE_URL = 'https://ufioxikrnewoprjuaune.supabase.co';
+        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVmaW94aWtybmV3b3ByanVhdW5lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI1NDMwODksImV4cCI6MjA4ODExOTA4OX0.tbe7EP8dWesUIXaLPuS3FmcZL1MFNTt4cPkBeIjiqw8';
+        const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+        const form = document.getElementById('waitlist-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const container = document.getElementById('form-container');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            submitBtn.disabled = true;
+            submitBtn.innerText = "TRANSMITTING...";
+
+            const payload = {
+                full_name: document.getElementById('full_name').value,
+                email: document.getElementById('email').value,
+                store_url: document.getElementById('store_url').value,
+                revenue_range: document.getElementById('revenue_range').value,
+                email_confirmed: false,
+                source: new URLSearchParams(window.location.search).get('utm_source') || 'direct'
+            };
+
+            const { error } = await _supabase
+                .from('waitlist_leads')
+                .insert([payload]);
+
+            if (error) {
+                if (error.code === '23505') {
+                    container.innerHTML = `
+                        <div class="text-center py-12 animate-success">
+                            <div class="text-actionYellow text-6xl mb-6">⚡</div>
+                            <h2 class="text-3xl font-900 mb-4 tracking-tighter uppercase">Already in the Ledger</h2>
+                            <p class="text-lg opacity-70 mb-8 max-w-sm mx-auto">
+                                This email is already prioritized for the private beta. We have your store data on file and will be in touch soon.
+                            </p>
+                            <div class="text-[10px] font-black uppercase tracking-[0.5em] text-trustBlue/30">
+                                Duplicate transmission ignored.
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    console.error("Transmission Error:", error.message);
+                    alert("Vault connection failed. Please try again.");
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = "Request Private Access";
+                }
+            } else {
+                container.innerHTML = `
+                    <div class="text-center py-12 animate-success">
+                        <div class="text-actionYellow text-6xl mb-6">✓</div>
+                        <h2 class="text-4xl font-900 mb-4 tracking-tighter">APPLICATION FILED</h2>
+                        <p class="text-lg opacity-70 mb-8 max-w-sm mx-auto">
+                            Your store data is in the ledger. We prioritize founders who seek absolute clarity. Expect a transmission soon.
+                        </p>
+                        <div class="text-[10px] font-black uppercase tracking-[0.5em] text-trustBlue/30">
+                            Infrastructure Standing By.
+                        </div>
+                    </div>
+                `;
+            }
+            // Smooth scroll to results
+            window.scrollTo({ top: container.offsetTop - 100, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
