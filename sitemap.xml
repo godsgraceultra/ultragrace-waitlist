@@ -12,12 +12,28 @@
         <priority>1.0</priority>
     </url>
 
-    <!-- Waitlist -->
+    <!-- Problem Section -->
     <url>
-        <loc>https://ultragracehq.com/#waitlist</loc>
-        <lastmod>2026-01-31</lastmod>
+        <loc>https://ultragracehq.com/#problem</loc>
+        <lastmod>2026-08-31</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Proactive Section -->
+    <url>
+        <loc>https://ultragracehq.com/#proactive</loc>
+        <lastmod>2026-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Ambition Section -->
+    <url>
+        <loc>https://ultragracehq.com/#ambition</loc>
+        <lastmod>2026-08-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 
 </urlset>
